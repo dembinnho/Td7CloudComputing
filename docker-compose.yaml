@@ -1,0 +1,19 @@
+version: '3'
+services:
+  mongo-td6:
+    image: mongo
+    volumes:
+      - myvolume2:/data/db
+  container-td6:
+    image: image-td6
+    volumes:
+      - ./file.txt:/app/file.txt
+    ports:
+      - "8000:8000"
+    depends_on:
+      - mongo-td6
+volumes:
+  myvolume2:
+networks:
+  default:
+    driver: bridge
