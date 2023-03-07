@@ -21,8 +21,5 @@ Etapes pour lancer l'application:
   
   Puis pour lancer l'application:
   "docker exec -it container-td6"
-  
- Voici le résultat que vous devriez avoir:
- ![image](https://user-images.githubusercontent.com/79918333/222913848-452d19de-2e19-45d8-9baa-d1dd10bb057e.png)
 
    
